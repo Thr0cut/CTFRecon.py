@@ -14,7 +14,7 @@
  ```python
  sudo python3 CTFRecon.py new -ip 10.129.107.139 -n test
  ```
- * Requests target IP (`-ip`) and CTF name (`n`) as arguments.
+ * Requests target IP (`-ip`) and CTF name (`-n`) as arguments.
  * Creates a */home/username/CTFs/name* directory, requests a unique directory name until it's given.
  * Adds a new "IP-hostname.htb" entry to */etc/hosts* file for hostname resolution (since DNS server is not available).
  * Checks if a webserver is present on the target (on common HTTP ports 80 and 8080). If yes, runs 3 types of scanning as parallel processes with the following tools (If a webserver is not present, only runs **nmap** scan.):
